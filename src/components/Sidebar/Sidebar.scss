@@ -1,0 +1,22 @@
+@import "../../styles/variable.scss";
+.SidebarStyle {
+  padding: 0 24px;
+  .HeaderLogo {
+    border-bottom: 1px solid $border-color;
+    img {
+      padding: 44px 0 32px 12px;
+    }
+  }
+  .SiderStyle {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100% - 32px);
+    .menuOptions {
+      //   padding: 0 24px;
+      .bottomOptions {
+      }
+    }
+  }
+}
