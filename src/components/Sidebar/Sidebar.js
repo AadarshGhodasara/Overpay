@@ -5,14 +5,10 @@ import { images } from "../../config/images";
 
 export default function Sidebar() {
   const { Sider } = Layout;
-  // const {SubMenu} = Menu2
-  // [
-  //   { key: "1", label: "MENU 1" },
-  //   { key: "2", label: "MENU 2" },
-  //   { key: "3", label: "MENU 3" },
-  //   { key: "4", label: "MENU 4" },
-  //   { key: "5", label: "MENU 5" },
-  // ];
+  const getImageReactComponent = (img) => {
+    let Component = img?.ReactComponent;
+    return <Component />;
+  };
   return (
     <div className="SidebarStyle">
       <div className="HeaderLogo">
@@ -25,16 +21,38 @@ export default function Sidebar() {
           defaultOpenKeys={["sub1"]}
           style={{ height: "100%", borderRight: 0 }}
         >
-          <Menu.Item key={"1"}>MENU 1</Menu.Item>
-          <Menu.Item key={"2"}>MENU 2</Menu.Item>
-          <Menu.Item key={"3"}>MENU 3</Menu.Item>
-          <Menu.Item key={"4"}>MENU 4</Menu.Item>
-          <Menu.Item key={"5"}>MENU 5</Menu.Item>
-          <Menu.Item key={"6"}>MENU 6</Menu.Item>
-          <Menu.Item key={"7"}>MENU 7</Menu.Item>
+          <Menu.Item key={"1"} icon={getImageReactComponent(images?.dashboard)}>
+            Dashboard
+          </Menu.Item>
+          <Menu.Item key={"2"} icon={getImageReactComponent(images?.invoices)}>
+            Invoices
+          </Menu.Item>
+          <Menu.Item key={"3"} icon={getImageReactComponent(images?.messages)}>
+            Messages
+          </Menu.Item>
+          <Menu.Item key={"4"} icon={getImageReactComponent(images?.card)}>
+            My Wallets
+          </Menu.Item>
+          <Menu.Item key={"5"} icon={getImageReactComponent(images?.activity)}>
+            Activity
+          </Menu.Item>
+          <Menu.Item key={"6"} icon={getImageReactComponent(images?.analytics)}>
+            Analytics
+          </Menu.Item>
+
+          <Menu.Item
+            className="bottomMenu"
+            key={"8"}
+            icon={getImageReactComponent(images?.getHelp)}
+          >
+            Get Help
+          </Menu.Item>
+          <Menu.Item key={"9"} icon={getImageReactComponent(images?.settings)}>
+            Settings
+          </Menu.Item>
         </Menu>
 
-        <Menu
+        {/* <Menu
           mode="inline"
           defaultSelectedKeys={["1"]}
           defaultOpenKeys={["sub1"]}
@@ -42,7 +60,7 @@ export default function Sidebar() {
         >
           <Menu.Item key={"6"}>MENU 6</Menu.Item>
           <Menu.Item key={"7"}>MENU 7</Menu.Item>
-        </Menu>
+        </Menu> */}
       </Sider>
     </div>
   );

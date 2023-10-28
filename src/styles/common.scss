@@ -1,6 +1,13 @@
 @import "./variable.scss";
 .LayoutWrapper {
   display: flex;
+  .contentWrapper {
+    width: 100%;
+    padding: 40px;
+    .content {
+      margin-top: 40px;
+    }
+  }
 }
 
 // Sider Style
@@ -14,4 +21,9 @@
     background-color: $primary-color;
     color: $white-color;
   }
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 800;
 }

@@ -1,0 +1,45 @@
+@import "../../styles/variable.scss";
+.HeaderStyle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &_rightSideContent {
+    display: flex;
+    gap: 16px;
+    .headerBtn {
+      background-color: #fafafa;
+      border: none;
+      padding: 12px;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .headerDropdown {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      .userImage {
+        img {
+          width: 32px;
+          height: 32px;
+        }
+      }
+      .userName {
+        font-size: 16px;
+        font-weight: 800;
+        letter-spacing: 0.2px;
+      }
+      .anticon-down {
+        svg {
+          path {
+            color: $grey-color;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+@import "../../styles/variable.scss";
+.DashboardBanerStyle {
+  height: 184px;
+  border-radius: 16px;
+  background-color: $primary-color;
+  position: relative;
+  &_image {
+    position: absolute;
+    right: 0;
+  }
+  &_content {
+    padding: 32px 0 32px 32px;
+    h1 {
+      color: $white-color;
+      margin: 0;
+      line-height: 31.2px;
+    }
+    p {
+      margin-top: 8px;
+      color: $white-color;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 0.3px;
+      opacity: 0.5;
+      line-height: 21px;
+    }
+    .upgradeBtn {
+      margin-top: 24px;
+      height: 36px;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      gap: 2px;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.4px;
+      color: $primary-color;
+    }
+  }
+}
