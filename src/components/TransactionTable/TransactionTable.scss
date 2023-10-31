@@ -6,6 +6,7 @@
     .imageIcon {
       display: flex;
       align-items: center;
+      padding-bottom: 8px;
     }
     .transactionLabel {
       font-size: 14px;
@@ -25,19 +26,40 @@
       line-height: 21px;
       letter-spacing: 0.2px;
     }
-    .statusLabel {
+    .statusLabelWrapper {
       display: flex;
-      width: 80px;
-      height: 32px;
-      padding: 8px;
-      justify-content: center;
+      justify-content: end;
+      .statusLabel {
+        display: flex;
+        width: 80px;
+        height: 32px;
+        padding: 8px;
+        justify-content: center;
+        align-items: center;
+        text-align: right;
+        border-radius: 8px;
+        // gap: 4px;
+        // flex-shrink: 0;
+        &_success {
+          background: $grey-color-F6;
+          color: $green-22;
+        }
+        &_pending {
+          background: $white-color-FF;
+          color: $orange-color-FF;
+        }
+      }
+    }
+    .dateColumn {
+      display: flex;
       align-items: center;
-      color: $green-22;
-      text-align: right;
-      border-radius: 8px;
-      background: $grey-color-F6;
-      // gap: 4px;
-      // flex-shrink: 0;
+      gap: 8px;
+    }
+    .subRow {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #edf2f7;
+      padding-bottom: 8px;
     }
   }
 }

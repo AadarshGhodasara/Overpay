@@ -1,0 +1,20 @@
+@import "../../styles/variable.scss";
+
+.WalletSectionStyle {
+  height: 463px;
+  border-radius: 16px;
+  border: 1px solid $grey-color-ED;
+  padding: 32px 24px;
+  &_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    h2 {
+      font-size: 18px;
+      font-weight: 800;
+      line-height: 24.3px;
+      letter-spacing: 0.2px;
+    }
+  }
+}

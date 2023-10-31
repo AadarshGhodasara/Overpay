@@ -4,6 +4,7 @@ import DashboardBaner from "../../components/DashboardBaner/DashboardBaner";
 import { Button, Dropdown, Select } from "antd";
 import { RightOutlined } from "@ant-design/icons";
 import TransactionTable from "../../components/TransactionTable/TransactionTable";
+import WalletSection from "../../components/WalletSection/WalletSection";
 export default function Dashboard() {
   const items = [
     {
@@ -51,7 +52,9 @@ export default function Dashboard() {
           </div>
         </div>
       </div>
-      <div className="rightSideContent">b</div>
+      <div className="rightSideContent">
+        <WalletSection />
+      </div>
     </div>
   );
 }
