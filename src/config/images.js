@@ -13,4 +13,7 @@ export const images = {
   userImg: require("../assets/images/Ellipse 73.svg"),
   dashboardBanerImg: require("../assets/images/Mask Group.svg"),
   rightArrowIcon: require("../assets/images/arrow-narrow-right.svg"),
+  bitcoinIcon: require("../assets/images/Frame 6.svg"),
+  userTransactionIcon: require("../assets/images/img.svg"),
+  paypalIcon: require("../assets/images/paypal.svg"),
 };

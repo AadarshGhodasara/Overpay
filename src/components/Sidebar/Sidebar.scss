@@ -1,6 +1,6 @@
 @import "../../styles/variable.scss";
 .SidebarStyle {
-  // height: 1vh;
+  position: relative;
   background-color: $grey-color-FA;
   padding: 0 24px;
   .HeaderLogo {
@@ -31,7 +31,8 @@
       }
     }
     .bottomMenu {
-      margin-top: 410px;
+      position: absolute;
+      bottom: 40px;
     }
     .menuOptions {
     }

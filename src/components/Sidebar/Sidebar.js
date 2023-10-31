@@ -39,28 +39,26 @@ export default function Sidebar() {
           <Menu.Item key={"6"} icon={getImageReactComponent(images?.analytics)}>
             Analytics
           </Menu.Item>
-
-          <Menu.Item
-            className="bottomMenu"
-            key={"8"}
-            icon={getImageReactComponent(images?.getHelp)}
-          >
-            Get Help
-          </Menu.Item>
-          <Menu.Item key={"9"} icon={getImageReactComponent(images?.settings)}>
-            Settings
-          </Menu.Item>
         </Menu>
 
-        {/* <Menu
-          mode="inline"
-          defaultSelectedKeys={["1"]}
-          defaultOpenKeys={["sub1"]}
-          style={{ height: "100%", borderRight: 0 }}
-        >
-          <Menu.Item key={"6"}>MENU 6</Menu.Item>
-          <Menu.Item key={"7"}>MENU 7</Menu.Item>
-        </Menu> */}
+        <div className="bottomMenu">
+          <Menu
+            mode="inline"
+            defaultSelectedKeys={["1"]}
+            defaultOpenKeys={["sub1"]}
+            style={{ height: "100%", borderRight: 0 }}
+          >
+            <Menu.Item key={"8"} icon={getImageReactComponent(images?.getHelp)}>
+              Get Help
+            </Menu.Item>
+            <Menu.Item
+              key={"9"}
+              icon={getImageReactComponent(images?.settings)}
+            >
+              Settings
+            </Menu.Item>
+          </Menu>
+        </div>
       </Sider>
     </div>
   );

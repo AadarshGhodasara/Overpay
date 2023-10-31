@@ -1,0 +1,43 @@
+@import "../../styles/variable.scss";
+.TransactionTableStyle {
+  &_row {
+    display: flex;
+    align-items: center;
+    .imageIcon {
+      display: flex;
+      align-items: center;
+    }
+    .transactionLabel {
+      font-size: 14px;
+      font-weight: 800;
+      line-height: 21px;
+      letter-spacing: 0.2px;
+    }
+    .dateLabel {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 21px;
+      letter-spacing: 0.2px;
+    }
+    .amountLabel {
+      font-size: 14px;
+      font-weight: 800;
+      line-height: 21px;
+      letter-spacing: 0.2px;
+    }
+    .statusLabel {
+      display: flex;
+      width: 80px;
+      height: 32px;
+      padding: 8px;
+      justify-content: center;
+      align-items: center;
+      color: $green-22;
+      text-align: right;
+      border-radius: 8px;
+      background: $grey-color-F6;
+      // gap: 4px;
+      // flex-shrink: 0;
+    }
+  }
+}
