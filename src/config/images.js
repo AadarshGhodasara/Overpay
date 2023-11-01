@@ -16,4 +16,8 @@ export const images = {
   bitcoinIcon: require("../assets/images/Frame 6.svg"),
   userTransactionIcon: require("../assets/images/img.svg"),
   paypalIcon: require("../assets/images/paypal.svg"),
+  cardSend: require("../assets/images/card-send.svg"),
+  cardReceive: require("../assets/images/card-receive.svg"),
+  invoicing: require("../assets/images/receipt.svg"),
+  moreIcon: require("../assets/images/element-plus.svg"),
 };

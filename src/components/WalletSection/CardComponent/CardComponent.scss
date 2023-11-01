@@ -1,0 +1,57 @@
+@import "../../../styles/variable.scss";
+.CardComponentStyle {
+  width: 310px;
+  height: 190px;
+  border-radius: 16px;
+  padding: 24px;
+  margin-top: 24px;
+  background-color: $primary-color;
+  background-image: url("../../../assets/images/cardBackgroundShape.svg");
+  position: relative;
+  &_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .overpayLogo {
+      svg {
+        width: 75px;
+        height: 16px;
+        path {
+          fill: $white-color;
+        }
+      }
+    }
+  }
+  &_balanceDetails {
+    position: absolute;
+    bottom: 22px;
+    display: flex;
+    flex-direction: column;
+    width: 269px;
+    .balanceAndEyeWrapper {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      span {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 18px;
+        letter-spacing: 0.4px;
+        color: $white-color;
+        opacity: 0.6;
+      }
+    }
+    .amountDetailsWrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 8px;
+      h1 {
+        color: $white-color;
+        font-size: 24px;
+        font-weight: 800;
+        line-height: 31px;
+      }
+    }
+  }
+}

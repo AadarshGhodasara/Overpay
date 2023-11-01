@@ -2,6 +2,9 @@ import React from "react";
 import "./WalletSection.scss";
 import DotsMenuIcon from "../Icons/DotsMenuIcon/DotsMenuIcon";
 import { Carousel } from "antd";
+import CardComponent from "./CardComponent/CardComponent";
+import CustomButton from "../CustomButton/CustomButton";
+import { images } from "../../config/images";
 
 export default function WalletSection() {
   return (
@@ -10,20 +13,36 @@ export default function WalletSection() {
         <h2>Wallet</h2>
         <DotsMenuIcon />
       </div>
-      {/* <Carousel>
-        <div>
-          <h3>1</h3>
+      <Carousel>
+        <div className="carouselItem">
+          <CardComponent />
         </div>
-        <div>
-          <h3>2</h3>
+        <div className="carouselItem">
+          <CardComponent />
         </div>
-        <div>
-          <h3>3</h3>
-        </div>
-        <div>
-          <h3>4</h3>
-        </div>
-      </Carousel> */}
+      </Carousel>
+      <div className="actionButtons">
+        <CustomButton
+          imgAlt={"send money"}
+          iconUrl={images?.cardSend?.default}
+          btnText={"Send"}
+        />
+        <CustomButton
+          imgAlt={"receive money"}
+          iconUrl={images?.cardReceive?.default}
+          btnText={"Receive"}
+        />
+        <CustomButton
+          imgAlt={"invoicing"}
+          iconUrl={images?.invoicing?.default}
+          btnText={"Invoicing"}
+        />
+        <CustomButton
+          imgAlt={"more"}
+          iconUrl={images?.moreIcon?.default}
+          btnText={"More"}
+        />
+      </div>
     </div>
   );
 }

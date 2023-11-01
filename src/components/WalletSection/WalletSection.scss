@@ -2,6 +2,7 @@
 
 .WalletSectionStyle {
   height: 463px;
+  width: 365px;
   border-radius: 16px;
   border: 1px solid $grey-color-ED;
   padding: 32px 24px;
@@ -16,5 +17,24 @@
       line-height: 24.3px;
       letter-spacing: 0.2px;
     }
+  }
+  .carouselItem {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+  .slick-dots-bottom {
+    bottom: -24px;
+  }
+  .ant-carousel .slick-dots li.slick-active button {
+    background: #000;
+  }
+  .ant-carousel .slick-dots li button {
+    background: #bcc0c4;
+  }
+  .actionButtons {
+    margin-top: 68px;
+    display: flex;
+    justify-content: space-between;
   }
 }
