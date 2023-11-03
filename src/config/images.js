@@ -20,4 +20,5 @@ export const images = {
   cardReceive: require("../assets/images/card-receive.svg"),
   invoicing: require("../assets/images/receipt.svg"),
   moreIcon: require("../assets/images/element-plus.svg"),
+  userImgTwo: require("../assets/images/image.svg"),
 };

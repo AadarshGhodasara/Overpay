@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import "./QuickTransferSection.scss";
 import MasterCardLogo from "../Icons/MasterCardLogo/MasterCardLogo";
 import ChevronDownIcon from "../Icons/ChevronDownIcon/ChevronDownIcon";
-import { Button } from "antd";
+import { Button, Input } from "antd";
+import { images } from "../../config/images";
 export default function QuickTransferSection() {
+  const [amount, setAmount] = useState(124);
+
+  const handleAmountChange = (e) => {
+    setAmount(e?.target?.value);
+  };
   return (
     <div className="QuickTransferSectionStyle">
       <div className="QuickTransferSectionStyle_header">
@@ -22,8 +28,19 @@ export default function QuickTransferSection() {
       <div className="QuickTransferSectionStyle_InputAmountSection">
         <span className="inputLabel">Enter amount</span>
         <div className="inputWrapper">
-          <span>$1,24</span>
-          <div>ABC</div>
+          <span>$</span>
+          <Input
+            className="amountField"
+            value={amount}
+            onChange={handleAmountChange}
+          />
+          <div className="userImgWrapper">
+            <img
+              src={images?.userTransactionIcon?.default}
+              alt="user images one"
+            />
+            <img src={images?.userImgTwo?.default} alt="another user images" />
+          </div>
         </div>
       </div>
       <div className="buttonWrapper">

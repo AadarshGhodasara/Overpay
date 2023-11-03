@@ -68,6 +68,35 @@
         font-weight: 800;
         line-height: 31.2px;
       }
+      .amountField {
+        border: none;
+        font-size: 24px;
+        font-weight: 800;
+        line-height: 31.2px;
+        padding: 0;
+        margin-left: 5px;
+        box-shadow: none;
+      }
+      .userImgWrapper {
+        display: flex;
+        img {
+          width: 26px;
+          height: 26px;
+          border-radius: 50%;
+          margin-right: -7px;
+          border: 1px solid $white-color;
+        }
+        img:last-child {
+          margin: 0;
+        }
+        img:nth-child(odd) {
+          background: $orange-color-FD;
+        }
+
+        img:nth-child(even) {
+          background: $blue-color-A7;
+        }
+      }
     }
   }
   .buttonWrapper {
