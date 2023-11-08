@@ -21,4 +21,7 @@ export const images = {
   invoicing: require("../assets/images/receipt.svg"),
   moreIcon: require("../assets/images/element-plus.svg"),
   userImgTwo: require("../assets/images/image.svg"),
+  signInImg: require("../assets/images/signInImg.svg"),
+  singInBackground: require("../assets/images/singInBackground.svg"),
+  SignUpImgContent: require("../assets/images/SignUpImgContent.svg"),
 };

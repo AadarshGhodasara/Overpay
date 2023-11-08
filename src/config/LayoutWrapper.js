@@ -2,14 +2,18 @@ import React from "react";
 import Sidebar from "../components/Sidebar/Sidebar";
 import Header from "../components/Header/Header";
 
-export default function LayoutWrapper({ children }) {
+export default function LayoutWrapper({ children, sideBar, header }) {
   return (
     <div className="LayoutWrapper">
-      <Sidebar />
-      <div className="contentWrapper">
-        <Header />
-        <div className="content">{children}</div>
-      </div>
+      {sideBar && <Sidebar />}
+      {header ? (
+        <div className="contentWrapper">
+          <Header />
+          <div className="content">{children}</div>
+        </div>
+      ) : (
+        children
+      )}
     </div>
   );
 }
