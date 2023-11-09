@@ -1,6 +1,6 @@
 import React from "react";
 import "./DashboardBaner.scss";
-import { images } from "../../config/images";
+import { images } from "../../../config/images";
 import { Button } from "antd";
 export default function DashboardBaner() {
   return (

@@ -50,7 +50,6 @@
             width: 100%;
             height: auto;
             display: flex;
-            gap: 8px;
           }
         }
         &_dividerContainer {
@@ -78,6 +77,16 @@
           margin-top: 24px;
           input {
             padding: 16px;
+          }
+          .ant-input-password {
+            padding: 16px;
+            input {
+              padding: 0;
+            }
+            svg {
+              width: 24px;
+              height: 24px;
+            }
           }
           .ant-radio-wrapper {
             margin-top: 8px;

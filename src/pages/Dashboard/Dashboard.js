@@ -1,18 +1,15 @@
 import React from "react";
 import "./Dashboard.scss";
-import DashboardBaner from "../../components/DashboardBaner/DashboardBaner";
-import { Button, Col, Dropdown, Row, Select } from "antd";
+import DashboardBaner from "../../components/DashboardComponents/DashboardBaner/DashboardBaner";
+import { Col, Row } from "antd";
 import { RightOutlined } from "@ant-design/icons";
-import TransactionTable from "../../components/TransactionTable/TransactionTable";
-import WalletSection from "../../components/WalletSection/WalletSection";
-import QuickTransferSection from "../../components/QuickTransferSection/QuickTransferSection";
+import TransactionTable from "../../components/DashboardComponents/TransactionTable/TransactionTable";
+import WalletSection from "../../components/DashboardComponents/WalletSection/WalletSection";
+import QuickTransferSection from "../../components/DashboardComponents/QuickTransferSection/QuickTransferSection";
+import GlobalButton from "../../components/Global/GlobalButton/GlobalButton";
+import GlobalSelect from "../../components/Global/GlobalSelect/GlobalSelect";
+
 export default function Dashboard() {
-  const items = [
-    {
-      key: "1",
-      label: "Jan 10 - Jan 16",
-    },
-  ];
   return (
     <div className="dashboardStyle">
       <Row gutter={32}>
@@ -29,7 +26,7 @@ export default function Dashboard() {
                   <div className="legend">
                     <span className="legend_grey"></span> Expenses
                   </div>
-                  <Select
+                  <GlobalSelect
                     defaultValue="10JanTo16Jan"
                     options={[
                       { value: "10JanTo16Jan", label: "Jan 10 - Jan 16" },
@@ -37,7 +34,7 @@ export default function Dashboard() {
                       { value: "23JanTo28Jan", label: "Jan 23 - Jan 28" },
                     ]}
                     className="timeDropdown"
-                  ></Select>
+                  />
                 </div>
               </div>
             </div>
@@ -45,9 +42,12 @@ export default function Dashboard() {
               <div className="leftSideContent_transaction_header">
                 <h2>Recent Transactions</h2>
                 <div className="rightSideContent">
-                  <Button className="viewAllBtn">
-                    View all <RightOutlined />
-                  </Button>
+                  <GlobalButton
+                    title={"View all"}
+                    icon={<RightOutlined />}
+                    className="viewAllBtn"
+                    isPostfixIcon
+                  />
                 </div>
               </div>
               <div className="leftSideContent_transaction_content">

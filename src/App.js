@@ -10,10 +10,10 @@ import SignUp from "./pages/SignUp/SignUp";
 function App() {
   return (
     <ConfigProvider theme={theme}>
-      <LayoutWrapper sideBar={false} header={false}>
-        {/* <Dashboard /> */}
+      <LayoutWrapper sideBar={true} header={true}>
+        <Dashboard />
         {/* <SignIn /> */}
-        <SignUp />
+        {/* <SignUp /> */}
       </LayoutWrapper>
     </ConfigProvider>
   );

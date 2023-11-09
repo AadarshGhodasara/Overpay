@@ -1,10 +1,9 @@
 import React from "react";
 import "./CardComponent.scss";
-import ChipIcon from "../../Icons/ChipIcon/ChipIcon";
-import { images } from "../../../config/images";
-import OverpayLogo from "../../Icons/OverpayLogo/OverpayLogo";
-import EyeIcon from "../../Icons/EyeIcon/EyeIcon";
-import VisaIcon from "../../Icons/VisaIcon/VisaIcon";
+import ChipIcon from "../../../Icons/ChipIcon/ChipIcon";
+import OverpayLogo from "../../../Icons/OverpayLogo/OverpayLogo";
+import EyeIcon from "../../../Icons/EyeIcon/EyeIcon";
+import VisaIcon from "../../../Icons/VisaIcon/VisaIcon";
 export default function CardComponent() {
   return (
     <div className="CardComponentStyle">

@@ -1,26 +1,32 @@
 import React from "react";
 import "./WalletSection.scss";
-import DotsMenuIcon from "../Icons/DotsMenuIcon/DotsMenuIcon";
-import { Carousel } from "antd";
+import DotsMenuIcon from "../../Icons/DotsMenuIcon/DotsMenuIcon";
 import CardComponent from "./CardComponent/CardComponent";
-import CustomButton from "../CustomButton/CustomButton";
-import { images } from "../../config/images";
+import CustomButton from "../../CustomButton/CustomButton";
+import { images } from "../../../config/images";
+import CarouselSlider from "../../Global/CarouselSlider/CarouselSlider";
 
 export default function WalletSection() {
+  const CarouselContent = () => (
+    <div className="carouselItem">
+      <CardComponent />
+    </div>
+  );
+  const CarouselItem = [
+    {
+      content: <CarouselContent />,
+    },
+    {
+      content: <CarouselContent />,
+    },
+  ];
   return (
     <div className="WalletSectionStyle">
       <div className="WalletSectionStyle_header">
         <h2>Wallet</h2>
         <DotsMenuIcon />
       </div>
-      <Carousel>
-        <div className="carouselItem">
-          <CardComponent />
-        </div>
-        <div className="carouselItem">
-          <CardComponent />
-        </div>
-      </Carousel>
+      <CarouselSlider items={CarouselItem} />
       <div className="actionButtons">
         <CustomButton
           imgAlt={"send money"}

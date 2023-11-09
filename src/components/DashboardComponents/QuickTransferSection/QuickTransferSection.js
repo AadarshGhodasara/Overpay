@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./QuickTransferSection.scss";
-import MasterCardLogo from "../Icons/MasterCardLogo/MasterCardLogo";
-import ChevronDownIcon from "../Icons/ChevronDownIcon/ChevronDownIcon";
+import MasterCardLogo from "../../Icons/MasterCardLogo/MasterCardLogo";
+import ChevronDownIcon from "../../Icons/ChevronDownIcon/ChevronDownIcon";
 import { Button, Input } from "antd";
-import { images } from "../../config/images";
+import { images } from "../../../config/images";
 export default function QuickTransferSection() {
   const [amount, setAmount] = useState(124);
 

@@ -56,12 +56,12 @@
       position: absolute;
       top: 24px;
     }
-    .singInContentWrapper {
+    .singUpContentWrapper {
       display: flex;
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      .singInContent {
+      .singUpContent {
         width: 427px;
         display: flex;
         align-items: center;
@@ -82,7 +82,7 @@
           letter-spacing: 0.3px;
           margin-top: 16px;
         }
-        &_signInButtons {
+        &_signUpButtons {
           margin-top: 40px;
           display: flex;
           gap: 16px;
@@ -92,7 +92,6 @@
             width: 100%;
             height: auto;
             display: flex;
-            gap: 8px;
           }
         }
         &_dividerContainer {
@@ -121,6 +120,16 @@
           input {
             padding: 16px;
           }
+          .ant-input-password {
+            padding: 16px;
+            input {
+              padding: 0;
+            }
+            svg {
+              width: 24px;
+              height: 24px;
+            }
+          }
           .ant-radio-wrapper {
             margin-top: 8px;
             span {
@@ -142,7 +151,7 @@
               letter-spacing: 0.2px;
             }
           }
-          .signInBtnWrapper {
+          .signUpBtnWrapper {
             button {
               width: 100%;
               height: 56px;
@@ -172,6 +181,7 @@
             letter-spacing: 0.2px;
             span {
               font-weight: 600;
+              cursor: pointer;
             }
           }
         }

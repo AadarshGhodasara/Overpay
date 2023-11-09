@@ -1,9 +1,9 @@
 import { Col, Row } from "antd";
 import React from "react";
-import { images } from "../../config/images";
+import { images } from "../../../config/images";
 import "./TransactionTable.scss";
-import Calendar from "../Icons/Calendar/Calendar";
-import { getFirstLetterCapital } from "../../config/utils";
+import Calendar from "../../Icons/Calendar/Calendar";
+import { getFirstLetterCapital } from "../../../config/utils";
 
 export default function TransactionTable() {
   const data = [
