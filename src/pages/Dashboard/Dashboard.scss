@@ -10,7 +10,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 24px 29px;
+        padding: 20px 29px;
         .rightSideContent {
           display: flex;
           gap: 24px;
@@ -49,6 +49,10 @@
             }
           }
         }
+      }
+      &_graphWrapper {
+        height: 260px;
+        padding: 0 10px;
       }
     }
     &_transaction {

@@ -8,8 +8,36 @@ import WalletSection from "../../components/DashboardComponents/WalletSection/Wa
 import QuickTransferSection from "../../components/DashboardComponents/QuickTransferSection/QuickTransferSection";
 import GlobalButton from "../../components/Global/GlobalButton/GlobalButton";
 import GlobalSelect from "../../components/Global/GlobalSelect/GlobalSelect";
+import LineChart from "../../components/Global/LineChart/LineChart";
 
 export default function Dashboard() {
+  const sampleDataset = [
+    {
+      backgroundColor: "#194BFB",
+      borderColor: "#194BFB",
+      key: "income",
+      label: "Income",
+      lineTension: 0,
+      data: [150, 500, 600, 200, 600, 1000, 550],
+    },
+    {
+      backgroundColor: "#1A202C",
+      borderColor: "#1A202C",
+      key: "expenses",
+      label: "Expenses",
+      lineTension: 0,
+      data: [60, 230, 500, 1000, 60, 100, 250],
+    },
+  ];
+  const sampleLabels = [
+    "Jan 10",
+    "Jan 11",
+    "Jan 12",
+    "Jan 13",
+    "Jan 14",
+    "Jan 15",
+    "Jan 16",
+  ];
   return (
     <div className="dashboardStyle">
       <Row gutter={32}>
@@ -36,6 +64,22 @@ export default function Dashboard() {
                     className="timeDropdown"
                   />
                 </div>
+              </div>
+              <div className="leftSideContent_chart_graphWrapper">
+                <LineChart
+                  labels={sampleLabels}
+                  datasets={sampleDataset}
+                  metaData={{
+                    allowDecimals: false,
+                    maintainAspectRatio: false,
+                    isCurrency: true,
+                    yAxisLable: "",
+                    xAxisLabel: "",
+                    displayLegend: false,
+                    tooltipIntersect: false,
+                    tooltipMode: "index",
+                  }}
+                />
               </div>
             </div>
             <div className="leftSideContent_transaction">

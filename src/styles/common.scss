@@ -37,3 +37,10 @@ h2 {
   font-size: 18px;
   font-weight: 800;
 }
+
+.loader {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+}

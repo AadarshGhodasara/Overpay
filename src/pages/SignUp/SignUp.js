@@ -8,7 +8,11 @@ import OverpayLogo from "../../components/Icons/OverpayLogo/OverpayLogo";
 import TextInput from "../../components/Global/TextInput/TextInput";
 import CarouselSlider from "../../components/Global/CarouselSlider/CarouselSlider";
 import GlobalButton from "../../components/Global/GlobalButton/GlobalButton";
+import { routes } from "../../config/routes";
+import { useNavigate } from "react-router-dom";
+
 export default function SignUp() {
+  const navigate = useNavigate();
   const CarouselContent = () => (
     <>
       <h1>Speady, Easy and Fast</h1>
@@ -24,6 +28,11 @@ export default function SignUp() {
     { content: <CarouselContent /> },
     { content: <CarouselContent /> },
   ];
+
+  const handleSignInRedirection = () => {
+    navigate(routes?.signIn?.path);
+  };
+
   return (
     <div className="SignUpStyle">
       <div className="SignUpStyle_leftContent">
@@ -86,7 +95,8 @@ export default function SignUp() {
               </Col>
               <Col span={24} className="signUpLabelWrapper">
                 <span>
-                  Don't have an account? <b>Sign In</b>
+                  Don't have an account?{" "}
+                  <b onClick={handleSignInRedirection}>Sign In</b>
                 </span>
               </Col>
             </Row>

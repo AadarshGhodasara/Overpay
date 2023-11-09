@@ -7,7 +7,10 @@ import "./SignIn.scss";
 import TextInput from "../../components/Global/TextInput/TextInput";
 import CarouselSlider from "../../components/Global/CarouselSlider/CarouselSlider";
 import GlobalButton from "../../components/Global/GlobalButton/GlobalButton";
+import { useNavigate } from "react-router-dom";
+import { routes } from "../../config/routes";
 export default function SignIn() {
+  const navigate = useNavigate();
   const CarouselContent = () => (
     <>
       <h1>Get better with money</h1>
@@ -18,6 +21,10 @@ export default function SignIn() {
       </p>
     </>
   );
+
+  const handleSignUpRedirection = () => {
+    navigate(routes?.signUp?.path);
+  };
 
   const CarouselItem = [
     { content: <CarouselContent /> },
@@ -65,9 +72,10 @@ export default function SignIn() {
               <Col span={24} className="signInBtnWrapper">
                 <GlobalButton title={"Sign In"} />
               </Col>
-              <Col span={24} className="signUpLabelWrapper">
+              <Col span={24} className="signInLabelWrapper">
                 <span>
-                  Don't have an account? <b>Sign Up</b>
+                  Don't have an account?{" "}
+                  <b onClick={handleSignUpRedirection}>Sign Up</b>
                 </span>
               </Col>
             </Row>
