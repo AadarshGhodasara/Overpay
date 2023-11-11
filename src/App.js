@@ -24,7 +24,11 @@ function App() {
           key={key}
           path={route.path}
           element={
-            <LayoutWrapper sideBar={route?.sideBar} header={route?.header}>
+            <LayoutWrapper
+              sideBar={route?.sideBar}
+              header={route?.header}
+              {...route}
+            >
               <route.component />
             </LayoutWrapper>
           }

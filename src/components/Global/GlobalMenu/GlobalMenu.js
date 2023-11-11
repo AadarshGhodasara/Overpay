@@ -11,7 +11,7 @@ export default function GlobalMenu({ selectedMenuKey, options, ...props }) {
       {...props}
     >
       {options?.map((menu) => (
-        <Menu.Item key={menu?.key} icon={menu?.icon}>
+        <Menu.Item key={menu?.key} icon={menu?.icon} path={menu?.path}>
           {menu?.title}
         </Menu.Item>
       ))}

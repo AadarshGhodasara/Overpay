@@ -1,0 +1,29 @@
+@import "../../../styles/variable.scss";
+.InvoiceFilterStyle {
+  display: flex;
+  justify-content: space-between;
+  &_search {
+    width: 295px;
+    .ant-input {
+      height: 48px;
+    }
+  }
+  .RightSideWrapper {
+    display: flex;
+    gap: 16px;
+    &_invoiceButton {
+      display: flex;
+      align-items: center;
+      padding: 9px 24px;
+      height: auto;
+      background-color: $primary-color;
+      color: $white-color;
+    }
+    &_invoiceFilter {
+      display: flex;
+      align-items: center;
+      height: 48px;
+      padding: 16px;
+    }
+  }
+}

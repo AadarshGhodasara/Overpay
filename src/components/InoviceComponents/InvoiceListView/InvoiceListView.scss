@@ -1,0 +1,128 @@
+@import "../../../styles/variable.scss";
+.InvoiceListViewStyle {
+  margin-top: 32px;
+  .ant-table {
+    tr {
+      th {
+        background: $white-color;
+        font-size: 16px;
+        font-weight: 800;
+        letter-spacing: 0.2px;
+        color: $grey-color;
+        &::before {
+          width: 0 !important;
+        }
+        .ant-table-column-sorters {
+          justify-content: normal;
+          gap: 12px;
+          .ant-table-column-title {
+            flex: none;
+          }
+        }
+      }
+      td {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+        .invoiceNameStyle {
+          display: flex;
+          align-items: center;
+          gap: 24px;
+          &_iconWrapper {
+            padding: 12px;
+            background-color: $purple-color-E8;
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+          }
+          &_contentWrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            span {
+              font-weight: 800;
+            }
+            p {
+              font-size: 14px;
+              font-weight: 500;
+              line-height: 21px;
+              margin: 0;
+              color: $grey-color;
+            }
+          }
+        }
+        .priceLabel {
+          font-weight: 600;
+        }
+        .statusWrapper {
+          display: flex;
+          width: 96px;
+          height: 40px;
+          padding: 8px;
+          justify-content: center;
+          align-items: center;
+          border-radius: 8px;
+          &_unpaid {
+            background-color: $purple-color-F7;
+            color: $purple-color-93;
+          }
+          &_pending {
+            background-color: $white-color-FF;
+            color: $orange-color-FF;
+          }
+          &_refund {
+            background-color: $yellow-color-FF;
+            color: $yellow-color-FA;
+          }
+          &_paid {
+            background-color: $grey-color-F6;
+            color: $green-22;
+          }
+        }
+        .actionDropdown {
+          .tableMenuWrapper {
+            display: flex;
+            width: 32px;
+            height: 32px;
+            padding: 6px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            border: 1px solid $border-color;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  &_paginationWrapper {
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    .sizeSelectionWrapper {
+      span {
+        font-size: 14px;
+        font-weight: 800;
+        line-height: 21px;
+        letter-spacing: 0.2px;
+        color: $grey-color-A0;
+      }
+      .ant-select {
+        margin-left: 16px;
+        span {
+          color: $grey-color-1A;
+        }
+      }
+    }
+  }
+}
+.ant-dropdown .ant-dropdown-menu .ant-dropdown-menu-item {
+  display: flex !important;
+  gap: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.4px;
+  color: $grey-color;
+}

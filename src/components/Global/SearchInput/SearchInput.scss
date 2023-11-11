@@ -1,0 +1,17 @@
+.ant-input-search {
+  position: relative;
+  .ant-input {
+    background-image: url("../../../assets/images/Search.svg");
+    background-repeat: no-repeat;
+    background-position: 16px 50%;
+    background-size: 24px;
+    z-index: 1;
+    border-radius: 4px !important;
+    padding: 16px 16px 16px 53px !important;
+    border-radius: 12px !important;
+    border: 1px solid #e2e8f0;
+  }
+  .ant-input-group-addon {
+    display: none;
+  }
+}

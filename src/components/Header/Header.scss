@@ -43,3 +43,41 @@
     }
   }
 }
+.userNameWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  span {
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: $grey-color-1A;
+  }
+  p {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0.4px;
+    color: #718096;
+  }
+}
+.ant-dropdown-menu-title-content {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0.2px;
+  color: $grey-color-1A;
+}
+.darkModeOptionWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  span {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0.2px;
+    color: $grey-color-1A;
+  }
+}

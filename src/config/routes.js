@@ -21,6 +21,15 @@ export const routes = {
     exact: true,
     sideBar: true,
     header: true,
+    headerTitle: "Dashboard",
+  },
+  invoices: {
+    path: "/Invoices",
+    component: lazy(() => import("../pages/Invoices/Invoices")),
+    exact: true,
+    sideBar: true,
+    header: true,
+    headerTitle: "Invoices",
   },
 };
 

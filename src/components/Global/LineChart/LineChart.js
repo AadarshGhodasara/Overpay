@@ -69,7 +69,6 @@ function LineChart({ labels = [], datasets, title, metaData }) {
             return context?.[0]?.label;
           },
           label: function (context) {
-            console.log("context=>", context);
             let label = context?.dataset?.label || "";
             if (label) {
               label += ": ";
@@ -77,7 +76,6 @@ function LineChart({ labels = [], datasets, title, metaData }) {
             label += isCurrency
               ? `$${context?.formattedValue}`
               : (context?.parsed?.y, allowDecimals ? 2 : 0);
-            console.log("label=>", label);
             return label;
           },
         },
