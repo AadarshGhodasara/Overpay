@@ -62,18 +62,24 @@
     color: #718096;
   }
 }
-.ant-dropdown-menu-title-content {
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 21px;
-  letter-spacing: 0.2px;
-  color: $grey-color-1A;
-}
+
 .darkModeOptionWrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
   span {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0.2px;
+    color: $grey-color-1A;
+  }
+}
+.dropdownCardStyle {
+  .ant-dropdown-menu-item {
+    gap: 12px !important;
+  }
+  .ant-dropdown-menu-title-content {
     font-size: 14px;
     font-weight: 500;
     line-height: 21px;

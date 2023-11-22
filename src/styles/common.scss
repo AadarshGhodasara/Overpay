@@ -1,4 +1,5 @@
 @import "./variable.scss";
+
 .LayoutWrapper {
   display: flex;
   height: 100vh;
@@ -24,22 +25,6 @@
     background-color: $primary-color;
     color: $white-color;
   }
-}
-
-h1 {
-  font-size: 24px;
-  font-weight: 800;
-  margin: 0;
-}
-
-h2 {
-  margin: 0;
-  font-size: 18px;
-  font-weight: 800;
-}
-
-p {
-  margin: 0;
 }
 
 .loader {

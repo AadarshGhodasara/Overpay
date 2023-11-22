@@ -60,7 +60,11 @@ export default function Header({ title }) {
         <Button className="headerBtn" type="default">
           <img src={images?.bell?.default} alt="bell icon" />
         </Button>
-        <Dropdown className="headerDropdown" menu={{ items }}>
+        <Dropdown
+          className="headerDropdown"
+          menu={{ items }}
+          overlayClassName="dropdownCardStyle"
+        >
           <a>
             <span className="userImage">
               <img src={images?.userImg?.default} alt="user img" />
