@@ -1,0 +1,89 @@
+@import "../../styles/variable.scss";
+.HeaderStyle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &_rightSideContent {
+    display: flex;
+    gap: 16px;
+    .headerBtn {
+      background-color: #fafafa;
+      border: none;
+      padding: 12px;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .headerDropdown {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      .userImage {
+        img {
+          width: 32px;
+          height: 32px;
+        }
+      }
+      .userName {
+        font-size: 16px;
+        font-weight: 800;
+        letter-spacing: 0.2px;
+      }
+      .anticon-down {
+        svg {
+          path {
+            color: $grey-color;
+          }
+        }
+      }
+    }
+  }
+}
+.userNameWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  span {
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: $grey-color-1A;
+  }
+  p {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0.4px;
+    color: #718096;
+  }
+}
+
+.darkModeOptionWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  span {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0.2px;
+    color: $grey-color-1A;
+  }
+}
+.dropdownCardStyle {
+  .ant-dropdown-menu-item {
+    gap: 12px !important;
+  }
+  .ant-dropdown-menu-title-content {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0.2px;
+    color: $grey-color-1A;
+  }
+}

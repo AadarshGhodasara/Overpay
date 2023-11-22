@@ -1,0 +1,211 @@
+@import "../../styles/variable.scss";
+.SignUpStyle {
+  width: 100%;
+  padding: 24px;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  &_leftContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("../../assets/images/singInBackground.svg");
+    background-color: $primary-color;
+    background-size: cover;
+    flex-direction: column;
+    position: relative;
+    .carouselWrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-top: 100px;
+      .ant-carousel {
+        width: 500px;
+        color: $white-color;
+        .slick-dots-bottom {
+          bottom: -20px;
+        }
+      }
+      h1 {
+        font-size: 40px;
+        line-height: 44px;
+      }
+      p {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+        letter-spacing: 0.2px;
+      }
+    }
+    .logoWrapper {
+      position: absolute;
+      top: 32px;
+      left: 32px;
+      svg {
+        path {
+          fill: #fff;
+        }
+      }
+    }
+  }
+  &_rightContent {
+    position: relative;
+    padding: 24px;
+    .logoWrapper {
+      position: absolute;
+      top: 24px;
+    }
+    .singUpContentWrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      .singUpContent {
+        width: 427px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 80px;
+        h1 {
+          font-size: 32px;
+          line-height: 40px;
+          letter-spacing: 0.2px;
+        }
+        .subHeading {
+          color: $grey-color;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0.3px;
+          margin-top: 16px;
+        }
+        &_signUpButtons {
+          margin-top: 40px;
+          display: flex;
+          gap: 16px;
+          width: 100%;
+          button {
+            padding: 16px;
+            width: 100%;
+            height: auto;
+            display: flex;
+          }
+        }
+        &_dividerContainer {
+          margin-top: 24px;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          .dividerLine {
+            text-align: center;
+            width: 100%;
+            color: $grey-color;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.3px;
+          }
+          span {
+            border-bottom: 1px solid $border-color;
+            display: block;
+            width: 100%;
+          }
+        }
+        &_signInForm {
+          margin-top: 24px;
+          input {
+            padding: 16px;
+          }
+          .ant-input-password {
+            padding: 16px;
+            input {
+              padding: 0;
+            }
+            svg {
+              width: 24px;
+              height: 24px;
+            }
+          }
+          .ant-radio-wrapper {
+            margin-top: 8px;
+            span {
+              font-size: 16px;
+              font-weight: 600;
+              line-height: 24px;
+              letter-spacing: 0.2px;
+            }
+          }
+          .forgotPassLabelWrapper {
+            display: flex;
+            justify-content: end;
+            span {
+              color: $primary-color;
+              text-align: right;
+              font-size: 16px;
+              font-weight: 600;
+              line-height: 24px;
+              letter-spacing: 0.2px;
+            }
+          }
+          .signUpBtnWrapper {
+            button {
+              width: 100%;
+              height: 56px;
+              padding: 8px;
+              font-size: 16px;
+              font-weight: 800;
+              line-height: 24px;
+              letter-spacing: 0.2px;
+              border-radius: 12px;
+              color: $white-color;
+              background: $primary-color;
+              margin-top: 16px;
+            }
+          }
+          .signUpLabelWrapper {
+            text-align: center;
+            margin-top: 16px;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            letter-spacing: 0.2px;
+            b {
+              cursor: pointer;
+            }
+          }
+          .policyLabel {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 21px;
+            letter-spacing: 0.2px;
+            span {
+              font-weight: 600;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+    .footer {
+      span {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+        color: $grey-color;
+      }
+      .leftLabel {
+        position: absolute;
+        left: 48px;
+        bottom: 24px;
+      }
+      .rightLabel {
+        position: absolute;
+        right: 24px;
+        bottom: 24px;
+      }
+    }
+  }
+}

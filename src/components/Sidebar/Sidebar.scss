@@ -1,5 +1,7 @@
 @import "../../styles/variable.scss";
 .SidebarStyle {
+  position: relative;
+  background-color: $grey-color-FA;
   padding: 0 24px;
   .HeaderLogo {
     border-bottom: 1px solid $border-color;
@@ -12,11 +14,28 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: calc(100% - 32px);
-    .menuOptions {
-      //   padding: 0 24px;
-      .bottomOptions {
+    .ant-menu {
+      background-color: $grey-color-FA;
+      margin-bottom: 35px;
+    }
+    .ant-menu-item-selected {
+      .ant-menu-item-icon {
+        path {
+          stroke: $white-color;
+        }
       }
+    }
+    .ant-menu-item-icon {
+      path {
+        stroke: $grey-color;
+      }
+    }
+    .bottomMenu {
+      position: absolute;
+      bottom: 40px;
+      width: 250px;
+    }
+    .menuOptions {
     }
   }
 }

@@ -1,6 +1,17 @@
 @import "./variable.scss";
+
 .LayoutWrapper {
   display: flex;
+  height: 100vh;
+  .contentWrapper {
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    padding: 40px;
+    .content {
+      margin-top: 40px;
+    }
+  }
 }
 
 // Sider Style
@@ -14,4 +25,11 @@
     background-color: $primary-color;
     color: $white-color;
   }
+}
+
+.loader {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
 }

@@ -1,0 +1,87 @@
+@import "../../styles/variable.scss";
+.dashboardStyle {
+  .leftSideContent {
+    &_chart {
+      margin-top: 32px;
+      height: 323px;
+      border-radius: 16px;
+      border: 1px solid $grey-color-ED;
+      &_header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 29px;
+        .rightSideContent {
+          display: flex;
+          gap: 24px;
+          .legend {
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 18px;
+            letter-spacing: 0.4px;
+            display: flex;
+            align-items: center;
+            span {
+              width: 12px;
+              height: 4px;
+              border-radius: 50px;
+              display: inline-block;
+              margin-right: 8px;
+            }
+            &_blue {
+              background-color: $primary-color;
+            }
+            &_grey {
+              background-color: $grey-color-1A;
+            }
+          }
+          .timeDropdown {
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 18px;
+            letter-spacing: 0.4px;
+            .ant-select-selector {
+              border: none !important;
+              background-color: $grey-color-F7 !important;
+            }
+            .ant-select-arrow {
+              color: $grey-color-1A;
+            }
+          }
+        }
+      }
+      &_graphWrapper {
+        height: 260px;
+        padding: 0 10px;
+      }
+    }
+    &_transaction {
+      margin-top: 32px;
+      height: 285px;
+      border-radius: 16px;
+      border: 1px solid $grey-color-ED;
+      padding: 24px;
+      &_header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .rightSideContent {
+          .viewAllBtn {
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 18px;
+            letter-spacing: 0.4px;
+            padding: 8px 12px;
+            border-radius: 8px;
+            border: none;
+            background-color: $grey-color-FA;
+            // background: var(--greyscale-50, #FAFAFA);
+          }
+        }
+      }
+      &_content {
+        margin-top: 21px;
+      }
+    }
+  }
+}

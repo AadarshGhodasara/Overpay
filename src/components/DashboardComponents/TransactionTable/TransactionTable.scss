@@ -1,0 +1,77 @@
+@import "../../../styles/variable.scss";
+.TransactionTableStyle {
+  width: 100%;
+  .ant-table {
+    tr {
+      td {
+        padding: 16px 0;
+        .userIconWrapper {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+        }
+
+        .transactionLabel {
+          font-size: 14px;
+          font-weight: 800;
+          line-height: 21px;
+          letter-spacing: 0.2px;
+        }
+        .dateColumnWrapper {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          .dateLabel {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 21px;
+            letter-spacing: 0.2px;
+            color: $grey-color;
+          }
+        }
+        .amountLabel {
+          font-size: 14px;
+          font-weight: 800;
+          line-height: 21px;
+          letter-spacing: 0.2px;
+        }
+        .statusLabelWrapper {
+          display: flex;
+          justify-content: end;
+          .statusLabel {
+            display: flex;
+            width: 80px;
+            height: 32px;
+            padding: 8px;
+            justify-content: center;
+            align-items: center;
+            text-align: right;
+            border-radius: 8px;
+            &_success {
+              background: $grey-color-F6;
+              color: $green-22;
+            }
+            &_pending {
+              background: $white-color-FF;
+              color: $orange-color-FF;
+            }
+          }
+        }
+      }
+      td:first-child {
+        padding: 0;
+        width: 56px;
+        border-bottom: none;
+      }
+    }
+    tr:last-child {
+      td {
+        border-bottom: none;
+      }
+    }
+  }
+}
