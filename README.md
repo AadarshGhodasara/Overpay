@@ -32,4 +32,4 @@ Start the server
 
 ## Demo
 
-https://6568a5ed53728114fea0b581--overpay-app.netlify.app/signUp
+https://6568a5ed53728114fea0b581--overpay-app.netlify.app
